@@ -1,0 +1,40 @@
+@import url('../css/config.css');
+
+.content-carrousel {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 763px;
+    overflow: hidden;
+}
+
+.content-carrousel img {
+    height: 770px;
+}
+
+@media screen and (max-width: 1550px) {
+    .content-carrousel {
+        height: 600px;
+    }
+    .content-carrousel img {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content-carrousel {
+        height: 450px;
+    }
+    .content-carrousel img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .content-carrousel {
+        height: 260px;
+    }
+    .content-carrousel img {
+        height: 260px;
+    }
+}

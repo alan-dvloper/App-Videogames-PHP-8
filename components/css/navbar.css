@@ -1,0 +1,139 @@
+@import url('../css/config.css');
+
+.main {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.header-nav nav {
+    width: 100%;
+    z-index: 99;
+    height: 80px;
+    position: relative;
+}
+
+label.logo a{
+    font-size: 30px;
+    padding: 0 50px;
+    line-height: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--font-roboto);
+}
+
+label.logo a > span {
+    color: var(--color-span);
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    margin: 0 5px;
+    line-height: 80px;
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.4s ease-in;
+    color: var(--white-color);
+    font-family: var(--font-roboto);
+}
+
+nav ul li a:hover {
+    color: var(--white-color);
+    background-color: var(--color-span);
+}
+
+.checkbtn {
+    float: right;
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 50px;
+    color: var(--white-color);
+}
+
+.subtitle-global {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.subtitle-global h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--white-color);
+    font-family: var(--font-roboto);
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        top: 80px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        left: -100%;
+        height: 100vh;
+        position: fixed;
+        text-align: center;
+        transition: 0.7s ease-in-out;
+        background: var(--dark-color);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    label.logo a {
+        font-size: 21px;
+        padding: 0 20px;
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    .subtitle-global {
+        margin: 30px auto;
+    }
+    
+    .subtitle-global h2 {
+        font-size: 21px;
+    }
+}

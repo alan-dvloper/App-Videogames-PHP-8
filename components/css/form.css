@@ -1,0 +1,124 @@
+@import url('../css/config.css');
+
+.content-form {
+    width: 100%;
+    margin: 50px auto;
+    display: block;
+    overflow: hidden;
+}
+
+.form-card {
+    width: 100%;
+    background-color: var(--cards-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.title-form {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.title-form h1 {
+    font-family: var(--font-roboto);
+    font-size: 35px;
+}
+
+.span-element {
+    color: var(--color-span);
+}
+
+.form-card-input {
+    width: 100%;
+    margin: 23px auto;
+}
+
+.form-card-input input, button {
+    width: 100%;
+    padding: 18px;
+    background-color: var(--dark-color);
+    outline: 0;
+    color: var(--white-color);
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-card-input input::placeholder {
+    color: var(--white-color);
+}
+
+.form-card-input input {
+    border: 1px solid var(--dark-color);
+}
+
+.form-card-input button {
+    border: 1px solid var(--color-span);
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+}
+
+.form-card-input button:hover {
+    background-color: var(--color-span);
+}
+
+.enlace-http {
+    margin-bottom: 30px;
+}
+
+.enlace-http p {
+    color: var(--white-color);
+    font-family: var(--font-roboto);
+    font-size: 18px;
+}
+
+.enlace-http p  a {
+    color: var(--color-span);
+    text-decoration: none;
+}
+
+.alert-message {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.alert-message p {
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+    .content-form {
+        margin-top: 90px;
+    }
+    .form-card {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .title-form h1 {
+        font-size: 25px;
+    }
+    
+    .title-form {
+        margin-bottom: 30px;
+    }
+
+    .form-card-input input, button {
+        font-size: 18px;
+    }
+
+    .enlace-http p {
+        font-size: 15px;
+    }
+
+    .alert-message p {
+        font-size: 15px;
+    }
+}
